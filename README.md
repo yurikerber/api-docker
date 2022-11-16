@@ -1,5 +1,9 @@
 # 🔨 Subir API usando container do docker
 
+```
+git clone https://github.com/yurikerber/api-docker && cd api-docker && sudo cp script.sh <local-projeto>
+```
+
   - **_Dockerfile_** conteúdo 👾
   
 ``` Dockerfile
