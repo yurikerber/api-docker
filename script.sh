@@ -15,7 +15,7 @@ COPY . .
 EXPOSE '$porta'
 CMD ["yarn", "serve"]' > Dockerfile
 
-echo - Qual o nome da imagem que deseja?
+echo - Qual o nome da imagem/container que deseja?
 read imagem_nome;
 
 a=$(docker build -t $imagem_nome .)
