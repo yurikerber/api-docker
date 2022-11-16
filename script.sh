@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN yarn install
 COPY . .
-EXPOSE '$porta'
+EXPOSE 3000
 CMD ["yarn", "serve"]' > Dockerfile
 
 echo - Qual o nome da imagem/container que deseja?
