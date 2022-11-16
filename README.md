@@ -5,6 +5,8 @@
  
  > **_Nota:_** Dockerfile e .dockerignore deve estar dentro do projeto e os comandos a seguir também devem ser executados a partir do projeto, onde está localizado o **_package.json_**
 
+<br>
+
   - [Script automatizado para subir API em um container](https://github.com/yurikerber/api-docker/blob/main/script.sh)
 
 > **_Nota:_** Basta colocar o script dentro da pasta do projeto de API onde está localizado o **_package.json_** e executar o seguinte comando:
@@ -12,6 +14,8 @@
 ```bash
 ./script.sh
 ```
+
+<br>
 
 ## 📌 Comandos:
 
