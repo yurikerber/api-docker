@@ -1,7 +1,22 @@
 # 🔨 Subir API usando container do docker
 
-  - [Dockerfile 👾](https://github.com/yurikerber/api-docker/blob/main/Dockerfile) 
-  - [.dockerignore 👾](https://github.com/yurikerber/api-docker/blob/main/.dockerignore)
+  - **_Dockerfile_** conteúdo 👾
+  
+``` Dockerfile
+FROM node:16
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN yarn install
+COPY . .
+EXPOSE 3000
+CMD ["yarn", "serve"]
+```
+  
+  - **_.dockerignore_** conteúdo 👾
+
+```
+node_modules/
+```
  
  > **_Nota:_** Dockerfile e .dockerignore deve estar dentro do projeto e os comandos a seguir também devem ser executados a partir do projeto, onde está localizado o **_package.json_**
 
